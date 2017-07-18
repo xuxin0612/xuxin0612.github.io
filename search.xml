@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Git Command(Section 3)]]></title>
+    <url>%2F2017%2F07%2F18%2Fgit-command-3%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git Command(Section 2)]]></title>
+    <url>%2F2017%2F07%2F17%2Fgit-command-2%2F</url>
+    <content type="text"><![CDATA[Clone a repository into a new directory1$ git clone git@github.com:xuxin0612/pythonLearning.git my-pythonLearning]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git Command(Section 1)]]></title>
+    <url>%2F2017%2F07%2F16%2Fgit-command%2F</url>
+    <content type="text"><![CDATA[At first, let’s look at a common example for using git. Example123456$ echo "# pythonLearning" &gt;&gt; README.md$ git init$ git add README.md$ git commit -m "first commit"$ git remote add origin git@github.com:xuxin0612/pythonLearning.git$ git push -u origin master ReferenceCreate an empty Git repository or reinitialize an existing one1$ git init Add file contents to the index1$ git add xx.txt Show the working tree status1$ git status Record changes to the repository1$ git commit -m “add xx.txt” Show changes between commits, commit and working tree, etc12$ echo "# some changes" &gt;&gt; xx.txt$ git diff xx.txt Show commit logs1$ git log —-pretty=oneline Reset current HEAD to the specified state1$ git reset —-hard HEAD^ &nbsp; &nbsp; or1$ git reset —-hard commit_id See and Manage the history of referance logs1$ git reflog Restore working tree files that are modified or deleted12$ rm -rf xx.txt$ git checkout -- xx.txt Remove files from the working tree and from the index1$ git rm xx.txt Associate a remote repository1$ git remote add origin git@github.com:xuxin0612/pythonLearning.git Add upstream, push the current branch1$ git push -u origin master]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2017%2F07%2F14%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>Nodejs</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+</search>
