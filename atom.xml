@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>On the way</title>
+  <subtitle>It&#39;s a new beginning.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://xuxin0612.github.io/"/>
+  <updated>2017-07-18T01:48:40.931Z</updated>
+  <id>https://xuxin0612.github.io/</id>
+  
+  <author>
+    <name>Scott Hsu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git Command(Section 3)</title>
+    <link href="https://xuxin0612.github.io/2017/07/18/git-command-3/"/>
+    <id>https://xuxin0612.github.io/2017/07/18/git-command-3/</id>
+    <published>2017-07-18T15:14:52.000Z</published>
+    <updated>2017-07-18T01:48:40.931Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="https://xuxin0612.github.io/categories/Git/"/>
+    
+    
+      <category term="git" scheme="https://xuxin0612.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Command(Section 2)</title>
+    <link href="https://xuxin0612.github.io/2017/07/17/git-command-2/"/>
+    <id>https://xuxin0612.github.io/2017/07/17/git-command-2/</id>
+    <published>2017-07-17T15:14:52.000Z</published>
+    <updated>2017-07-18T01:48:40.931Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Clone-a-repository-into-a-new-directory"><a href="#Clone-a-repository-into-a-new-directory" class="headerlink" title="Clone a repository into a new directory"></a>Clone a repository into a new directory</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:xuxin0612/pythonLearning.git my-pythonLearning</div></pre></td></tr></table></figure>
+<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Clone-a-repository-into-a-new-directory&quot;&gt;&lt;a href=&quot;#Clone-a-repository-into-a-new-directory&quot; class=&quot;headerlink&quot; title=&quot;Clone a repository into a new directory&quot;&gt;&lt;/a&gt;Clone a repository into a new directory&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; git@github.com:xuxin0612/pythonLearning.git my-pythonLearning&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="https://xuxin0612.github.io/categories/Git/"/>
+    
+    
+      <category term="git" scheme="https://xuxin0612.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Command(Section 1)</title>
+    <link href="https://xuxin0612.github.io/2017/07/16/git-command/"/>
+    <id>https://xuxin0612.github.io/2017/07/16/git-command/</id>
+    <published>2017-07-16T15:14:52.000Z</published>
+    <updated>2017-07-18T01:48:40.951Z</updated>
+    
+    <content type="html"><![CDATA[<p>At first, let’s look at a common example for using <a href="https://git-scm.com/" target="_blank" rel="external">git</a>.</p>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">"# pythonLearning"</span> &gt;&gt; README.md</div><div class="line">$ git init</div><div class="line">$ git add README.md</div><div class="line">$ git commit -m <span class="string">"first commit"</span></div><div class="line">$ git remote add origin git@github.com:xuxin0612/pythonLearning.git</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h3 id="Create-an-empty-Git-repository-or-reinitialize-an-existing-one"><a href="#Create-an-empty-Git-repository-or-reinitialize-an-existing-one" class="headerlink" title="Create an empty Git repository or reinitialize an existing one"></a>Create an empty Git repository or reinitialize an existing one</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git init</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="Add-file-contents-to-the-index"><a href="#Add-file-contents-to-the-index" class="headerlink" title="Add file contents to the index"></a>Add file contents to the index</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add xx.txt</div></pre></td></tr></table></figure>
+<h3 id="Show-the-working-tree-status"><a href="#Show-the-working-tree-status" class="headerlink" title="Show the working tree status"></a>Show the working tree status</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git status</div></pre></td></tr></table></figure>
+<h3 id="Record-changes-to-the-repository"><a href="#Record-changes-to-the-repository" class="headerlink" title="Record changes to the repository"></a>Record changes to the repository</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -m “add xx.txt”</div></pre></td></tr></table></figure>
+<h3 id="Show-changes-between-commits-commit-and-working-tree-etc"><a href="#Show-changes-between-commits-commit-and-working-tree-etc" class="headerlink" title="Show changes between commits, commit and working tree, etc"></a>Show changes between commits, commit and working tree, etc</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">"# some changes"</span> &gt;&gt; xx.txt</div><div class="line">$ git diff xx.txt</div></pre></td></tr></table></figure>
+<h3 id="Show-commit-logs"><a href="#Show-commit-logs" class="headerlink" title="Show commit logs"></a>Show commit logs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">log</span> —-pretty=oneline</div></pre></td></tr></table></figure>
+<h3 id="Reset-current-HEAD-to-the-specified-state"><a href="#Reset-current-HEAD-to-the-specified-state" class="headerlink" title="Reset current HEAD to the specified state"></a>Reset current HEAD to the specified state</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset —-hard HEAD^</div></pre></td></tr></table></figure>
+<p>&nbsp; &nbsp; or<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset —-hard commit_id</div></pre></td></tr></table></figure></p>
+<h3 id="See-and-Manage-the-history-of-referance-logs"><a href="#See-and-Manage-the-history-of-referance-logs" class="headerlink" title="See and Manage the history of referance logs"></a>See and Manage the history of referance logs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reflog</div></pre></td></tr></table></figure>
+<h3 id="Restore-working-tree-files-that-are-modified-or-deleted"><a href="#Restore-working-tree-files-that-are-modified-or-deleted" class="headerlink" title="Restore working tree files that are modified or deleted"></a>Restore working tree files that are modified or deleted</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ rm -rf xx.txt</div><div class="line">$ git checkout -- xx.txt</div></pre></td></tr></table></figure>
+<h3 id="Remove-files-from-the-working-tree-and-from-the-index"><a href="#Remove-files-from-the-working-tree-and-from-the-index" class="headerlink" title="Remove files from the working tree and from the index"></a>Remove files from the working tree and from the index</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git rm xx.txt</div></pre></td></tr></table></figure>
+<h3 id="Associate-a-remote-repository"><a href="#Associate-a-remote-repository" class="headerlink" title="Associate a remote repository"></a>Associate a remote repository</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git remote add origin git@github.com:xuxin0612/pythonLearning.git</div></pre></td></tr></table></figure>
+<h3 id="Add-upstream-push-the-current-branch"><a href="#Add-upstream-push-the-current-branch" class="headerlink" title="Add upstream, push the current branch"></a>Add upstream, push the current branch</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;At first, let’s look at a common example for using &lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Example&quot;&gt;&lt;a href=&quot;#Example&quot; class=&quot;headerlink&quot; title=&quot;Example&quot;&gt;&lt;/a&gt;Example&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;# pythonLearning&quot;&lt;/span&gt; &amp;gt;&amp;gt; README.md&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git init&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git add README.md&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git commit -m &lt;span class=&quot;string&quot;&gt;&quot;first commit&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git remote add origin git@github.com:xuxin0612/pythonLearning.git&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git push -u origin master&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;h3 id=&quot;Create-an-empty-Git-repository-or-reinitialize-an-existing-one&quot;&gt;&lt;a href=&quot;#Create-an-empty-Git-repository-or-reinitialize-an-existing-one&quot; class=&quot;headerlink&quot; title=&quot;Create an empty Git repository or reinitialize an existing one&quot;&gt;&lt;/a&gt;Create an empty Git repository or reinitialize an existing one&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git init&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="https://xuxin0612.github.io/categories/Git/"/>
+    
+    
+      <category term="git" scheme="https://xuxin0612.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://xuxin0612.github.io/2017/07/14/hello-world/"/>
+    <id>https://xuxin0612.github.io/2017/07/14/hello-world/</id>
+    <published>2017-07-14T12:46:25.000Z</published>
+    <updated>2017-07-18T01:48:40.952Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a><br><a id="more"></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo server&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Nodejs" scheme="https://xuxin0612.github.io/categories/Nodejs/"/>
+    
+    
+      <category term="Hexo" scheme="https://xuxin0612.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
