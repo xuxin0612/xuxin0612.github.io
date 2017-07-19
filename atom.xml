@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xuxin0612.github.io/"/>
-  <updated>2017-07-18T01:48:40.931Z</updated>
+  <updated>2017-07-19T15:48:19.000Z</updated>
   <id>https://xuxin0612.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://xuxin0612.github.io/2017/07/18/git-command-3/"/>
     <id>https://xuxin0612.github.io/2017/07/18/git-command-3/</id>
     <published>2017-07-18T15:14:52.000Z</published>
-    <updated>2017-07-18T01:48:40.931Z</updated>
+    <updated>2017-07-19T15:48:19.000Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
@@ -42,7 +42,7 @@
     <link href="https://xuxin0612.github.io/2017/07/17/git-command-2/"/>
     <id>https://xuxin0612.github.io/2017/07/17/git-command-2/</id>
     <published>2017-07-17T15:14:52.000Z</published>
-    <updated>2017-07-18T01:48:40.931Z</updated>
+    <updated>2017-07-19T15:48:19.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Clone-a-repository-into-a-new-directory"><a href="#Clone-a-repository-into-a-new-directory" class="headerlink" title="Clone a repository into a new directory"></a>Clone a repository into a new directory</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:xuxin0612/pythonLearning.git my-pythonLearning</div></pre></td></tr></table></figure>
 <a id="more"></a>]]></content>
@@ -65,7 +65,7 @@
     <link href="https://xuxin0612.github.io/2017/07/16/git-command/"/>
     <id>https://xuxin0612.github.io/2017/07/16/git-command/</id>
     <published>2017-07-16T15:14:52.000Z</published>
-    <updated>2017-07-18T01:48:40.951Z</updated>
+    <updated>2017-07-19T15:48:19.000Z</updated>
     
     <content type="html"><![CDATA[<p>At first, let’s look at a common example for using <a href="https://git-scm.com/" target="_blank" rel="external">git</a>.</p>
 <h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">"# pythonLearning"</span> &gt;&gt; README.md</div><div class="line">$ git init</div><div class="line">$ git add README.md</div><div class="line">$ git commit -m <span class="string">"first commit"</span></div><div class="line">$ git remote add origin git@github.com:xuxin0612/pythonLearning.git</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
@@ -105,7 +105,7 @@
     <link href="https://xuxin0612.github.io/2017/07/14/hello-world/"/>
     <id>https://xuxin0612.github.io/2017/07/14/hello-world/</id>
     <published>2017-07-14T12:46:25.000Z</published>
-    <updated>2017-07-18T01:48:40.952Z</updated>
+    <updated>2017-07-19T15:48:19.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
