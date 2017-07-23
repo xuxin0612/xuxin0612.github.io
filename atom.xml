@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xuxin0612.github.io/"/>
-  <updated>2017-07-18T01:48:40.931Z</updated>
+  <updated>2017-07-23T09:08:25.000Z</updated>
   <id>https://xuxin0612.github.io/</id>
   
   <author>
@@ -17,16 +17,26 @@
   
   <entry>
     <title>Git Command(Section 3)</title>
-    <link href="https://xuxin0612.github.io/2017/07/18/git-command-3/"/>
-    <id>https://xuxin0612.github.io/2017/07/18/git-command-3/</id>
-    <published>2017-07-18T15:14:52.000Z</published>
-    <updated>2017-07-18T01:48:40.931Z</updated>
+    <link href="https://xuxin0612.github.io/2017/01/08/git-command-3/"/>
+    <id>https://xuxin0612.github.io/2017/01/08/git-command-3/</id>
+    <published>2017-01-08T15:14:52.000Z</published>
+    <updated>2017-07-23T09:08:25.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p>This section is used to record some problems and solutions. Welcome to ask questions and discuss them.</p>
+<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q &amp; A"></a>Q &amp; A</h2><h3 id="Q1"><a href="#Q1" class="headerlink" title="Q1"></a>Q1</h3><p>If I want to abandon changes on a branch like dev and fetch the remote banch of the same name?<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -B dev</div></pre></td></tr></table></figure></p>
+<p>If -B is given, <new_branch> is created if it doesn’t exist; otherwise, it is reset. This is the transactional equivalent of<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git branch -f &lt;branch&gt; [&lt;start point&gt;]</div><div class="line">$ git checkout &lt;branch&gt;</div></pre></td></tr></table></figure></new_branch></p>
+<a id="more"></a>
+<h3 id="Q2"><a href="#Q2" class="headerlink" title="Q2"></a>Q2</h3><p>when someone build a new branch on remote repository, but I couldn’t find the new-built branch on my remote branches on my computer.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git fetch -p</div></pre></td></tr></table></figure></p>
+<p>The command will fetch remote branches again if the branch has been added, removed or changed.</p>
+<h3 id="Q3"><a href="#Q3" class="headerlink" title="Q3"></a>Q3</h3><p>You are needed to fix bugs on a new emergency branch on the same remote repository when you develop on the feature branch.<br>But the feature branch counldn’t be pushed to the remote repository because the develop work is not finished. Now you should<br>save you work on the feature branch at first.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git stash</div><div class="line">``` </div><div class="line">The <span class="built_in">command</span> saves your <span class="built_in">local</span> modifications away and reverts the working directory to match the HEAD commit.</div><div class="line">And <span class="keyword">then</span> checkout the fixbug branch and fix bugs. After you completed the work on the fixbug branch and pushed it to the </div><div class="line">remote repository, you checkout the origin feature branch and restore the changes you saved.</div><div class="line">```bash</div><div class="line">git stash apply stash@&#123;0&#125;</div></pre></td></tr></table></figure></p>
+<p>Then you could continue your previous work.</p>
+]]></content>
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+      &lt;p&gt;This section is used to record some problems and solutions. Welcome to ask questions and discuss them.&lt;/p&gt;
+&lt;h2 id=&quot;Q-amp-A&quot;&gt;&lt;a href=&quot;#Q-amp-A&quot; class=&quot;headerlink&quot; title=&quot;Q &amp;amp; A&quot;&gt;&lt;/a&gt;Q &amp;amp; A&lt;/h2&gt;&lt;h3 id=&quot;Q1&quot;&gt;&lt;a href=&quot;#Q1&quot; class=&quot;headerlink&quot; title=&quot;Q1&quot;&gt;&lt;/a&gt;Q1&lt;/h3&gt;&lt;p&gt;If I want to abandon changes on a branch like dev and fetch the remote banch of the same name?&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git checkout -B dev&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;If -B is given, &lt;new_branch&gt; is created if it doesn’t exist; otherwise, it is reset. This is the transactional equivalent of&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git branch -f &amp;lt;branch&amp;gt; [&amp;lt;start point&amp;gt;]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git checkout &amp;lt;branch&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/new_branch&gt;&lt;/p&gt;
     
     </summary>
     
@@ -39,17 +49,34 @@
   
   <entry>
     <title>Git Command(Section 2)</title>
-    <link href="https://xuxin0612.github.io/2017/07/17/git-command-2/"/>
-    <id>https://xuxin0612.github.io/2017/07/17/git-command-2/</id>
-    <published>2017-07-17T15:14:52.000Z</published>
-    <updated>2017-07-18T01:48:40.931Z</updated>
+    <link href="https://xuxin0612.github.io/2017/01/07/git-command-2/"/>
+    <id>https://xuxin0612.github.io/2017/01/07/git-command-2/</id>
+    <published>2017-01-07T15:14:52.000Z</published>
+    <updated>2017-07-23T09:08:25.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Clone-a-repository-into-a-new-directory"><a href="#Clone-a-repository-into-a-new-directory" class="headerlink" title="Clone a repository into a new directory"></a>Clone a repository into a new directory</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:xuxin0612/pythonLearning.git my-pythonLearning</div></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p>Now we could learn more about <a href="https://git-scm.com/" target="_blank" rel="external">git</a>.</p>
+<h2 id="Advanced-reference"><a href="#Advanced-reference" class="headerlink" title="Advanced reference"></a>Advanced reference</h2><h3 id="Clone-a-repository-into-a-new-directory"><a href="#Clone-a-repository-into-a-new-directory" class="headerlink" title="Clone a repository into a new directory"></a>Clone a repository into a new directory</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:xuxin0612/pythonLearning.git my-pythonLearning</div></pre></td></tr></table></figure>
+<h3 id="Switch-branches"><a href="#Switch-branches" class="headerlink" title="Switch branches"></a>Switch branches</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b dev</div></pre></td></tr></table></figure>
+<h3 id="List-branches"><a href="#List-branches" class="headerlink" title="List branches"></a>List branches</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch -a</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="Create-branches"><a href="#Create-branches" class="headerlink" title="Create branches"></a>Create branches</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch dev</div></pre></td></tr></table></figure>
+<h3 id="Delete-branches"><a href="#Delete-branches" class="headerlink" title="Delete branches"></a>Delete branches</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch -d dev</div></pre></td></tr></table></figure>
+<h3 id="Merge-the-branch-into-the-current-branch"><a href="#Merge-the-branch-into-the-current-branch" class="headerlink" title="Merge the branch into the current branch"></a>Merge the branch into the current branch</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git merge —-no-ff -m “merge with no-ff” dev</div></pre></td></tr></table></figure>
+<h3 id="Push-the-branch-into-the-remote-repository"><a href="#Push-the-branch-into-the-remote-repository" class="headerlink" title="Push the branch into the remote repository"></a>Push the branch into the remote repository</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push origin dev:dev</div></pre></td></tr></table></figure>
+<h3 id="Config-the-username-and-email-of-git"><a href="#Config-the-username-and-email-of-git" class="headerlink" title="Config the username and email of git"></a>Config the username and email of git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config user.name “scott”</div><div class="line">$ git config user.email “xuxin0612@gmail.com”</div></pre></td></tr></table></figure>
+<h3 id="Pull-the-newest-changes-into-the-current-banch"><a href="#Pull-the-newest-changes-into-the-current-banch" class="headerlink" title="Pull the newest changes into the current banch"></a>Pull the newest changes into the current banch</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git pull</div></pre></td></tr></table></figure>
+<h3 id="Build-a-tag"><a href="#Build-a-tag" class="headerlink" title="Build a tag"></a>Build a tag</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git tag v1.0</div></pre></td></tr></table></figure>
+<h3 id="Look-at-all-the-tags"><a href="#Look-at-all-the-tags" class="headerlink" title="Look at all the tags"></a>Look at all the tags</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git tag v1.0</div></pre></td></tr></table></figure>
+<h3 id="Delete-the-tag"><a href="#Delete-the-tag" class="headerlink" title="Delete the tag"></a>Delete the tag</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git tag -d v1.0</div></pre></td></tr></table></figure>
+<h3 id="Push-the-tag-into-the-remote-repository"><a href="#Push-the-tag-into-the-remote-repository" class="headerlink" title="Push the tag into the remote repository"></a>Push the tag into the remote repository</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push origin v1.0</div></pre></td></tr></table></figure>
+]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Clone-a-repository-into-a-new-directory&quot;&gt;&lt;a href=&quot;#Clone-a-repository-into-a-new-directory&quot; class=&quot;headerlink&quot; title=&quot;Clone a repository into a new directory&quot;&gt;&lt;/a&gt;Clone a repository into a new directory&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; git@github.com:xuxin0612/pythonLearning.git my-pythonLearning&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;p&gt;Now we could learn more about &lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Advanced-reference&quot;&gt;&lt;a href=&quot;#Advanced-reference&quot; class=&quot;headerlink&quot; title=&quot;Advanced reference&quot;&gt;&lt;/a&gt;Advanced reference&lt;/h2&gt;&lt;h3 id=&quot;Clone-a-repository-into-a-new-directory&quot;&gt;&lt;a href=&quot;#Clone-a-repository-into-a-new-directory&quot; class=&quot;headerlink&quot; title=&quot;Clone a repository into a new directory&quot;&gt;&lt;/a&gt;Clone a repository into a new directory&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; git@github.com:xuxin0612/pythonLearning.git my-pythonLearning&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;Switch-branches&quot;&gt;&lt;a href=&quot;#Switch-branches&quot; class=&quot;headerlink&quot; title=&quot;Switch branches&quot;&gt;&lt;/a&gt;Switch branches&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git checkout -b dev&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;List-branches&quot;&gt;&lt;a href=&quot;#List-branches&quot; class=&quot;headerlink&quot; title=&quot;List branches&quot;&gt;&lt;/a&gt;List branches&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git branch -a&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -62,10 +89,10 @@
   
   <entry>
     <title>Git Command(Section 1)</title>
-    <link href="https://xuxin0612.github.io/2017/07/16/git-command/"/>
-    <id>https://xuxin0612.github.io/2017/07/16/git-command/</id>
-    <published>2017-07-16T15:14:52.000Z</published>
-    <updated>2017-07-18T01:48:40.951Z</updated>
+    <link href="https://xuxin0612.github.io/2017/01/06/git-command/"/>
+    <id>https://xuxin0612.github.io/2017/01/06/git-command/</id>
+    <published>2017-01-06T15:14:52.000Z</published>
+    <updated>2017-07-23T09:08:25.000Z</updated>
     
     <content type="html"><![CDATA[<p>At first, let’s look at a common example for using <a href="https://git-scm.com/" target="_blank" rel="external">git</a>.</p>
 <h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">"# pythonLearning"</span> &gt;&gt; README.md</div><div class="line">$ git init</div><div class="line">$ git add README.md</div><div class="line">$ git commit -m <span class="string">"first commit"</span></div><div class="line">$ git remote add origin git@github.com:xuxin0612/pythonLearning.git</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
@@ -82,7 +109,7 @@
 <h3 id="Restore-working-tree-files-that-are-modified-or-deleted"><a href="#Restore-working-tree-files-that-are-modified-or-deleted" class="headerlink" title="Restore working tree files that are modified or deleted"></a>Restore working tree files that are modified or deleted</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ rm -rf xx.txt</div><div class="line">$ git checkout -- xx.txt</div></pre></td></tr></table></figure>
 <h3 id="Remove-files-from-the-working-tree-and-from-the-index"><a href="#Remove-files-from-the-working-tree-and-from-the-index" class="headerlink" title="Remove files from the working tree and from the index"></a>Remove files from the working tree and from the index</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git rm xx.txt</div></pre></td></tr></table></figure>
 <h3 id="Associate-a-remote-repository"><a href="#Associate-a-remote-repository" class="headerlink" title="Associate a remote repository"></a>Associate a remote repository</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git remote add origin git@github.com:xuxin0612/pythonLearning.git</div></pre></td></tr></table></figure>
-<h3 id="Add-upstream-push-the-current-branch"><a href="#Add-upstream-push-the-current-branch" class="headerlink" title="Add upstream, push the current branch"></a>Add upstream, push the current branch</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
+<h3 id="Add-upstream-push-the-current-branch"><a href="#Add-upstream-push-the-current-branch" class="headerlink" title="Add upstream, push the current branch"></a>Add upstream, push the current branch</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push -u origin master:master</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
@@ -102,10 +129,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://xuxin0612.github.io/2017/07/14/hello-world/"/>
-    <id>https://xuxin0612.github.io/2017/07/14/hello-world/</id>
-    <published>2017-07-14T12:46:25.000Z</published>
-    <updated>2017-07-18T01:48:40.952Z</updated>
+    <link href="https://xuxin0612.github.io/2017/01/01/hello-world/"/>
+    <id>https://xuxin0612.github.io/2017/01/01/hello-world/</id>
+    <published>2017-01-01T12:46:25.000Z</published>
+    <updated>2017-07-23T09:07:58.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>

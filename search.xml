@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title><![CDATA[Git Command(Section 3)]]></title>
-    <url>%2F2017%2F07%2F18%2Fgit-command-3%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <url>%2F2017%2F01%2F08%2Fgit-command-3%2F</url>
+    <content type="text"><![CDATA[This section is used to record some problems and solutions. Welcome to ask questions and discuss them. Q &amp; AQ1If I want to abandon changes on a branch like dev and fetch the remote banch of the same name?1$ git checkout -B dev If -B is given, is created if it doesn’t exist; otherwise, it is reset. This is the transactional equivalent of12$ git branch -f &lt;branch&gt; [&lt;start point&gt;]$ git checkout &lt;branch&gt; Q2when someone build a new branch on remote repository, but I couldn’t find the new-built branch on my remote branches on my computer.1$ git fetch -p The command will fetch remote branches again if the branch has been added, removed or changed. Q3You are needed to fix bugs on a new emergency branch on the same remote repository when you develop on the feature branch.But the feature branch counldn’t be pushed to the remote repository because the develop work is not finished. Now you shouldsave you work on the feature branch at first.1234567git stash``` The command saves your local modifications away and reverts the working directory to match the HEAD commit.And then checkout the fixbug branch and fix bugs. After you completed the work on the fixbug branch and pushed it to the remote repository, you checkout the origin feature branch and restore the changes you saved.```bashgit stash apply stash@&#123;0&#125; Then you could continue your previous work.]]></content>
       <categories>
         <category>Git</category>
       </categories>
@@ -13,8 +13,8 @@
   </entry>
   <entry>
     <title><![CDATA[Git Command(Section 2)]]></title>
-    <url>%2F2017%2F07%2F17%2Fgit-command-2%2F</url>
-    <content type="text"><![CDATA[Clone a repository into a new directory1$ git clone git@github.com:xuxin0612/pythonLearning.git my-pythonLearning]]></content>
+    <url>%2F2017%2F01%2F07%2Fgit-command-2%2F</url>
+    <content type="text"><![CDATA[Now we could learn more about git. Advanced referenceClone a repository into a new directory1$ git clone git@github.com:xuxin0612/pythonLearning.git my-pythonLearning Switch branches1$ git checkout -b dev List branches1$ git branch -a Create branches1$ git branch dev Delete branches1$ git branch -d dev Merge the branch into the current branch1$ git merge —-no-ff -m “merge with no-ff” dev Push the branch into the remote repository1$ git push origin dev:dev Config the username and email of git12$ git config user.name “scott”$ git config user.email “xuxin0612@gmail.com” Pull the newest changes into the current banch1$ git pull Build a tag1$ git tag v1.0 Look at all the tags1$ git tag v1.0 Delete the tag1$ git tag -d v1.0 Push the tag into the remote repository1$ git push origin v1.0]]></content>
       <categories>
         <category>Git</category>
       </categories>
@@ -24,8 +24,8 @@
   </entry>
   <entry>
     <title><![CDATA[Git Command(Section 1)]]></title>
-    <url>%2F2017%2F07%2F16%2Fgit-command%2F</url>
-    <content type="text"><![CDATA[At first, let’s look at a common example for using git. Example123456$ echo "# pythonLearning" &gt;&gt; README.md$ git init$ git add README.md$ git commit -m "first commit"$ git remote add origin git@github.com:xuxin0612/pythonLearning.git$ git push -u origin master ReferenceCreate an empty Git repository or reinitialize an existing one1$ git init Add file contents to the index1$ git add xx.txt Show the working tree status1$ git status Record changes to the repository1$ git commit -m “add xx.txt” Show changes between commits, commit and working tree, etc12$ echo "# some changes" &gt;&gt; xx.txt$ git diff xx.txt Show commit logs1$ git log —-pretty=oneline Reset current HEAD to the specified state1$ git reset —-hard HEAD^ &nbsp; &nbsp; or1$ git reset —-hard commit_id See and Manage the history of referance logs1$ git reflog Restore working tree files that are modified or deleted12$ rm -rf xx.txt$ git checkout -- xx.txt Remove files from the working tree and from the index1$ git rm xx.txt Associate a remote repository1$ git remote add origin git@github.com:xuxin0612/pythonLearning.git Add upstream, push the current branch1$ git push -u origin master]]></content>
+    <url>%2F2017%2F01%2F06%2Fgit-command%2F</url>
+    <content type="text"><![CDATA[At first, let’s look at a common example for using git. Example123456$ echo "# pythonLearning" &gt;&gt; README.md$ git init$ git add README.md$ git commit -m "first commit"$ git remote add origin git@github.com:xuxin0612/pythonLearning.git$ git push -u origin master ReferenceCreate an empty Git repository or reinitialize an existing one1$ git init Add file contents to the index1$ git add xx.txt Show the working tree status1$ git status Record changes to the repository1$ git commit -m “add xx.txt” Show changes between commits, commit and working tree, etc12$ echo "# some changes" &gt;&gt; xx.txt$ git diff xx.txt Show commit logs1$ git log —-pretty=oneline Reset current HEAD to the specified state1$ git reset —-hard HEAD^ &nbsp; &nbsp; or1$ git reset —-hard commit_id See and Manage the history of referance logs1$ git reflog Restore working tree files that are modified or deleted12$ rm -rf xx.txt$ git checkout -- xx.txt Remove files from the working tree and from the index1$ git rm xx.txt Associate a remote repository1$ git remote add origin git@github.com:xuxin0612/pythonLearning.git Add upstream, push the current branch1$ git push -u origin master:master]]></content>
       <categories>
         <category>Git</category>
       </categories>
@@ -35,7 +35,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2017%2F07%2F14%2Fhello-world%2F</url>
+    <url>%2F2017%2F01%2F01%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <categories>
         <category>Nodejs</category>
