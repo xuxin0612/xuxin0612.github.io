@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Logback Manual(Section 1)]]></title>
+    <url>%2F2017%2F01%2F22%2Flogback-manual-Ch1%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>logback</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown Note]]></title>
+    <url>%2F2017%2F01%2F15%2Fmarkdown-note%2F</url>
+    <content type="text"><![CDATA[Markdown is a better way to write content for the web. So spending several minutes learning it is beneficial for us. Markdown SyntaxItalics and BoldTo make a phrase italic in Markdown, you can surround words with an underscore ( _ ).1_Writing in Markdown_ is not that hard! Writing in Markdown is not that hard! Similarly, to make phrases bold in Markdown, you can surround words with two asterisks ( ** ).1**Writing in Markdown** is not that hard! Writing in Markdown is not that hard! HeadersAs their name implies, they act like titles or subtitles above sections.There are six types of headers, in decreasing sizes:To make headers in Markdown, you preface the phrase with a hash mark (#). You place the same number of hash marks as the size of the header you want. For example, for a header one, you’d use one hash mark (# Header One), while for a header three, you’d use three (### Header Three).123456# Header one## Header two### Header three#### Header four##### Header five###### Header six LinksTo create an hyperlink link, you wrap the link text in brackets ( [ ] ), and then you wrap the link in parenthesis ( ( ) )1Search about [On the way](https://xuxin0612.github.io) Search about On the way Or123Search about [On the way][site][site]: https://xuxin0612.github.io Search about On the way ImagesTo create an inline image link, enter an exclamation point ( ! ), wrap the alt text in brackets ( [ ] ), and then wrap the link in parenthesis ( ( ) ).1![site-author-image](https://xuxin0612.github.io/uploads/59572399266843.png) or 123![site-author-image][author image][author image]: https://xuxin0612.github.io/uploads/59572399266843.png Alt text is a phrase or sentence that describes the image for the visually impaired.1![site-author-image](https://xuxin0612.github.io/uploads/59572399266844.png) Block QuotesTo create a block quote, all you have to do is preface a line with the “greater than” caret (&gt;).1234&gt; To create a block quote, allyou have to do is preface a line with the "greater than" caret (&gt;).To create a block quote, all you have to do is preface a line with the "greater than" caret (&gt;). To create a block quote, allyou have to do is preface a line with the “greater than” caret (&gt;). To create a block quote, all you have to do is preface a line with the “greater than” caret (&gt;). ListsTo create an unordered list, you’ll want to preface each item in the list with an asterisk ( * ).1234* Milk* Eggs* Salmon* Butter Milk Eggs Salmon Butter An ordered list is prefaced with numbers, instead of asterisks.1231. carrot2. cabbage * lettuce Crack three eggs over a bowl Pour a gallon of milk into the bowl Rub the salmon vigorously with butter Drop the salmon into the egg-milk bowl To make a list with more depth, or, to nest one list within another, all you need to do is to indent each asterisk one space more than the preceding item.123456789* Vegetables * carrot * cabbage * lettuce* Fruits * apple * pear * mango * mango juice Vegetables carrot cabbage lettuce Fruits apple pear mango mango juice]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Git Command(Section 3)]]></title>
     <url>%2F2017%2F01%2F08%2Fgit-command-3%2F</url>
     <content type="text"><![CDATA[This section is used to record some problems and solutions. Welcome to ask questions and discuss them. Q &amp; AQ1If I want to abandon changes on a branch like dev and fetch the remote banch of the same name?1$ git checkout -B dev If -B is given, is created if it doesn’t exist; otherwise, it is reset. This is the transactional equivalent of12$ git branch -f &lt;branch&gt; [&lt;start point&gt;]$ git checkout &lt;branch&gt; Q2when someone build a new branch on remote repository, but I couldn’t find the new-built branch on my remote branches on my computer.1$ git fetch -p The command will fetch remote branches again if the branch has been added, removed or changed. Q3You are needed to fix bugs on a new emergency branch on the same remote repository when you develop on the feature branch.But the feature branch counldn’t be pushed to the remote repository because the develop work is not finished. Now you shouldsave you work on the feature branch at first.1234567git stash``` The command saves your local modifications away and reverts the working directory to match the HEAD commit.And then checkout the fixbug branch and fix bugs. After you completed the work on the fixbug branch and pushed it to the remote repository, you checkout the origin feature branch and restore the changes you saved.```bashgit stash apply stash@&#123;0&#125; Then you could continue your previous work.]]></content>

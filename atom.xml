@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xuxin0612.github.io/"/>
-  <updated>2017-07-23T09:08:25.000Z</updated>
+  <updated>2017-07-27T06:56:08.870Z</updated>
   <id>https://xuxin0612.github.io/</id>
   
   <author>
@@ -16,11 +16,112 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Logback Manual(Section 1)</title>
+    <link href="https://xuxin0612.github.io/2017/01/22/logback-manual-Ch1/"/>
+    <id>https://xuxin0612.github.io/2017/01/22/logback-manual-Ch1/</id>
+    <published>2017-01-22T12:46:25.000Z</published>
+    <updated>2017-07-27T06:56:08.870Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Java" scheme="https://xuxin0612.github.io/categories/Java/"/>
+    
+    
+      <category term="java" scheme="https://xuxin0612.github.io/tags/java/"/>
+    
+      <category term="logback" scheme="https://xuxin0612.github.io/tags/logback/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown Note</title>
+    <link href="https://xuxin0612.github.io/2017/01/15/markdown-note/"/>
+    <id>https://xuxin0612.github.io/2017/01/15/markdown-note/</id>
+    <published>2017-01-15T15:14:52.000Z</published>
+    <updated>2017-07-27T06:56:36.090Z</updated>
+    
+    <content type="html"><![CDATA[<p>Markdown is a better way to write content for the web. So spending several minutes learning it is beneficial for us.</p>
+<h2 id="Markdown-Syntax"><a href="#Markdown-Syntax" class="headerlink" title="Markdown Syntax"></a>Markdown Syntax</h2><h3 id="Italics-and-Bold"><a href="#Italics-and-Bold" class="headerlink" title="Italics and Bold"></a>Italics and Bold</h3><p>To make a phrase italic in Markdown, you can surround words with an underscore ( _ ).<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="emphasis">_Writing in Markdown_</span> is not that hard!</div></pre></td></tr></table></figure></p>
+<p><em>Writing in Markdown</em> is not that hard!</p>
+<p>Similarly, to make phrases bold in Markdown, you can surround words with two asterisks ( ** ).<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="strong">**Writing in Markdown**</span> is not that hard!</div></pre></td></tr></table></figure></p>
+<p><strong>Writing in Markdown</strong> is not that hard!<br><a id="more"></a></p>
+<h3 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h3><p>As their name implies, they act like titles or subtitles above sections.<br>There are six types of headers, in decreasing sizes:<br>To make headers in Markdown, you preface the phrase with a hash mark (#). You place the same number of hash marks as the size of the header you want. For example, for a header one, you’d use one hash mark (# Header One), while for a header three, you’d use three (### Header Three).<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="section"># Header one</span></div><div class="line"><span class="section">## Header two</span></div><div class="line"><span class="section">### Header three</span></div><div class="line"><span class="section">#### Header four</span></div><div class="line"><span class="section">##### Header five</span></div><div class="line"><span class="section">###### Header six</span></div></pre></td></tr></table></figure></p>
+<p><img src="https://xuxin0612.github.io/uploads/1501135901.jpg" alt="headers image"></p>
+<h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><p>To create an hyperlink link, you wrap the link text in brackets ( [ ] ), and then you wrap the link in parenthesis ( ( ) )<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Search about [<span class="string">On the way</span>](<span class="link">https://xuxin0612.github.io</span>)</div></pre></td></tr></table></figure></p>
+<p>Search about <a href="https://xuxin0612.github.io">On the way</a></p>
+<p>Or<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Search about [<span class="string">On the way</span>][<span class="symbol">site</span>]</div><div class="line"></div><div class="line">[<span class="symbol">site</span>]: <span class="link">https://xuxin0612.github.io</span></div></pre></td></tr></table></figure></p>
+<p>Search about <a href="xuxin0612.github.io">On the way</a></p>
+<h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><p>To create an inline image link, enter an exclamation point ( ! ), wrap the alt text in brackets ( [ ] ), and then wrap the link in parenthesis ( ( ) ).<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![<span class="string">site-author-image</span>](<span class="link">https://xuxin0612.github.io/uploads/59572399266843.png</span>)</div></pre></td></tr></table></figure></p>
+<p><img src="https://xuxin0612.github.io/uploads/59572399266843.png" alt="site-author-image"></p>
+<p>or</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">![<span class="string">site-author-image</span>][<span class="symbol">author image</span>]</div><div class="line"></div><div class="line">[<span class="symbol">author image</span>]: <span class="link">https://xuxin0612.github.io/uploads/59572399266843.png</span></div></pre></td></tr></table></figure>
+<p><img src="https://xuxin0612.github.io/uploads/59572399266843.png" alt="site-author-image"></p>
+<p>Alt text is a phrase or sentence that describes the image for the visually impaired.<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![<span class="string">site-author-image</span>](<span class="link">https://xuxin0612.github.io/uploads/59572399266844.png</span>)</div></pre></td></tr></table></figure></p>
+<p><img src="https://xuxin0612.github.io/uploads/59572399266844.png" alt="site-author-image"></p>
+<h3 id="Block-Quotes"><a href="#Block-Quotes" class="headerlink" title="Block Quotes"></a>Block Quotes</h3><p>To create a block quote, all you have to do is preface a line with the “greater than” caret (&gt;).<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; To create a block quote, all</span></div><div class="line">you have to do is preface a line with the "greater than" caret (&gt;).</div><div class="line"></div><div class="line">To create a block quote, all you have to do is preface a line with the "greater than" caret (&gt;).</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>To create a block quote, all<br>you have to do is preface a line with the “greater than” caret (&gt;).</p>
+</blockquote>
+<p>To create a block quote, all you have to do is preface a line with the “greater than” caret (&gt;).</p>
+<h3 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h3><p>To create an unordered list, you’ll want to preface each item in the list with an asterisk ( * ).<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">* </span>Milk</div><div class="line"><span class="bullet">* </span>Eggs</div><div class="line"><span class="bullet">* </span>Salmon</div><div class="line"><span class="bullet">* </span>Butter</div></pre></td></tr></table></figure></p>
+<ul>
+<li>Milk</li>
+<li>Eggs</li>
+<li>Salmon</li>
+<li>Butter</li>
+</ul>
+<p>An ordered list is prefaced with numbers, instead of asterisks.<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">1. </span>carrot</div><div class="line"><span class="bullet">2. </span>cabbage</div><div class="line"><span class="code">    * lettuce</span></div></pre></td></tr></table></figure></p>
+<ol>
+<li>Crack three eggs over a bowl</li>
+<li>Pour a gallon of milk into the bowl</li>
+<li>Rub the salmon vigorously with butter</li>
+<li>Drop the salmon into the egg-milk bowl</li>
+</ol>
+<p>To make a list with more depth, or, to nest one list within another, all you need to do is to indent each asterisk one space more than the preceding item.<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">* </span>Vegetables</div><div class="line">  * carrot</div><div class="line">  * cabbage</div><div class="line">  * lettuce</div><div class="line"><span class="bullet">* </span>Fruits</div><div class="line">  * apple</div><div class="line">  * pear</div><div class="line">  * mango</div><div class="line"><span class="code">    * mango juice</span></div></pre></td></tr></table></figure></p>
+<ul>
+<li>Vegetables<ul>
+<li>carrot</li>
+<li>cabbage</li>
+<li>lettuce</li>
+</ul>
+</li>
+<li>Fruits<ul>
+<li>apple</li>
+<li>pear</li>
+<li>mango<ul>
+<li>mango juice</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Markdown is a better way to write content for the web. So spending several minutes learning it is beneficial for us.&lt;/p&gt;
+&lt;h2 id=&quot;Markdown-Syntax&quot;&gt;&lt;a href=&quot;#Markdown-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Markdown Syntax&quot;&gt;&lt;/a&gt;Markdown Syntax&lt;/h2&gt;&lt;h3 id=&quot;Italics-and-Bold&quot;&gt;&lt;a href=&quot;#Italics-and-Bold&quot; class=&quot;headerlink&quot; title=&quot;Italics and Bold&quot;&gt;&lt;/a&gt;Italics and Bold&lt;/h3&gt;&lt;p&gt;To make a phrase italic in Markdown, you can surround words with an underscore ( _ ).&lt;br&gt;&lt;figure class=&quot;highlight markdown&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;emphasis&quot;&gt;_Writing in Markdown_&lt;/span&gt; is not that hard!&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Writing in Markdown&lt;/em&gt; is not that hard!&lt;/p&gt;
+&lt;p&gt;Similarly, to make phrases bold in Markdown, you can surround words with two asterisks ( ** ).&lt;br&gt;&lt;figure class=&quot;highlight markdown&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;strong&quot;&gt;**Writing in Markdown**&lt;/span&gt; is not that hard!&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Writing in Markdown&lt;/strong&gt; is not that hard!&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Markdown" scheme="https://xuxin0612.github.io/categories/Markdown/"/>
+    
+    
+      <category term="markdown" scheme="https://xuxin0612.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Git Command(Section 3)</title>
     <link href="https://xuxin0612.github.io/2017/01/08/git-command-3/"/>
     <id>https://xuxin0612.github.io/2017/01/08/git-command-3/</id>
     <published>2017-01-08T15:14:52.000Z</published>
-    <updated>2017-07-23T09:08:25.000Z</updated>
+    <updated>2017-07-24T02:39:07.702Z</updated>
     
     <content type="html"><![CDATA[<p>This section is used to record some problems and solutions. Welcome to ask questions and discuss them.</p>
 <h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q &amp; A"></a>Q &amp; A</h2><h3 id="Q1"><a href="#Q1" class="headerlink" title="Q1"></a>Q1</h3><p>If I want to abandon changes on a branch like dev and fetch the remote banch of the same name?<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -B dev</div></pre></td></tr></table></figure></p>
@@ -52,7 +153,7 @@
     <link href="https://xuxin0612.github.io/2017/01/07/git-command-2/"/>
     <id>https://xuxin0612.github.io/2017/01/07/git-command-2/</id>
     <published>2017-01-07T15:14:52.000Z</published>
-    <updated>2017-07-23T09:08:25.000Z</updated>
+    <updated>2017-07-24T02:39:07.699Z</updated>
     
     <content type="html"><![CDATA[<p>Now we could learn more about <a href="https://git-scm.com/" target="_blank" rel="external">git</a>.</p>
 <h2 id="Advanced-reference"><a href="#Advanced-reference" class="headerlink" title="Advanced reference"></a>Advanced reference</h2><h3 id="Clone-a-repository-into-a-new-directory"><a href="#Clone-a-repository-into-a-new-directory" class="headerlink" title="Clone a repository into a new directory"></a>Clone a repository into a new directory</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:xuxin0612/pythonLearning.git my-pythonLearning</div></pre></td></tr></table></figure>
@@ -92,7 +193,7 @@
     <link href="https://xuxin0612.github.io/2017/01/06/git-command/"/>
     <id>https://xuxin0612.github.io/2017/01/06/git-command/</id>
     <published>2017-01-06T15:14:52.000Z</published>
-    <updated>2017-07-23T09:08:25.000Z</updated>
+    <updated>2017-07-24T02:39:07.705Z</updated>
     
     <content type="html"><![CDATA[<p>At first, let’s look at a common example for using <a href="https://git-scm.com/" target="_blank" rel="external">git</a>.</p>
 <h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">"# pythonLearning"</span> &gt;&gt; README.md</div><div class="line">$ git init</div><div class="line">$ git add README.md</div><div class="line">$ git commit -m <span class="string">"first commit"</span></div><div class="line">$ git remote add origin git@github.com:xuxin0612/pythonLearning.git</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
@@ -132,7 +233,7 @@
     <link href="https://xuxin0612.github.io/2017/01/01/hello-world/"/>
     <id>https://xuxin0612.github.io/2017/01/01/hello-world/</id>
     <published>2017-01-01T12:46:25.000Z</published>
-    <updated>2017-07-23T09:07:58.000Z</updated>
+    <updated>2017-07-24T02:39:07.709Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
