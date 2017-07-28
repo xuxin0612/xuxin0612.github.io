@@ -40,11 +40,11 @@
     <link href="https://xuxin0612.github.io/2017/01/16/markdown-expansion/"/>
     <id>https://xuxin0612.github.io/2017/01/16/markdown-expansion/</id>
     <published>2017-01-16T15:14:52.000Z</published>
-    <updated>2017-07-28T03:49:21.010Z</updated>
+    <updated>2017-07-28T03:53:46.586Z</updated>
     
     <content type="html"><![CDATA[<p>This article mainly tells the rest of common markdown syntax.</p>
 <h2 id="Markdown-Expansion"><a href="#Markdown-Expansion" class="headerlink" title="Markdown Expansion"></a>Markdown Expansion</h2><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><p>To coding in Markdown, you preface the phrase with a <code>TAB</code> or four <code>blanks</code>, you also surround code block with ```  ```, like</p>
-<p>```<br><br>hello world<br>```</p>
+<p>```<br>hello world<br>```</p>
 <p>And to write inline code, you can surround words with backticks(``), like `TAB`.</p>
 <h3 id="Separator-Line"><a href="#Separator-Line" class="headerlink" title="Separator Line"></a>Separator Line</h3><p>To add a separator line, you use three or more characters such as <code>*</code> or <code>-</code> or <code>_</code> in a line.<br><a id="more"></a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">***</div><div class="line">------</div><div class="line">___</div></pre></td></tr></table></figure>
@@ -84,7 +84,7 @@
     
       &lt;p&gt;This article mainly tells the rest of common markdown syntax.&lt;/p&gt;
 &lt;h2 id=&quot;Markdown-Expansion&quot;&gt;&lt;a href=&quot;#Markdown-Expansion&quot; class=&quot;headerlink&quot; title=&quot;Markdown Expansion&quot;&gt;&lt;/a&gt;Markdown Expansion&lt;/h2&gt;&lt;h3 id=&quot;Code&quot;&gt;&lt;a href=&quot;#Code&quot; class=&quot;headerlink&quot; title=&quot;Code&quot;&gt;&lt;/a&gt;Code&lt;/h3&gt;&lt;p&gt;To coding in Markdown, you preface the phrase with a &lt;code&gt;TAB&lt;/code&gt; or four &lt;code&gt;blanks&lt;/code&gt;, you also surround code block with ```  ```, like&lt;/p&gt;
-&lt;p&gt;```&lt;br&gt;&lt;br&gt;hello world&lt;br&gt;```&lt;/p&gt;
+&lt;p&gt;```&lt;br&gt;hello world&lt;br&gt;```&lt;/p&gt;
 &lt;p&gt;And to write inline code, you can surround words with backticks(``), like `TAB`.&lt;/p&gt;
 &lt;h3 id=&quot;Separator-Line&quot;&gt;&lt;a href=&quot;#Separator-Line&quot; class=&quot;headerlink&quot; title=&quot;Separator Line&quot;&gt;&lt;/a&gt;Separator Line&lt;/h3&gt;&lt;p&gt;To add a separator line, you use three or more characters such as &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;-&lt;/code&gt; or &lt;code&gt;_&lt;/code&gt; in a line.&lt;br&gt;
     
