@@ -36,11 +36,69 @@
   </entry>
   
   <entry>
+    <title>Markdown Expansion</title>
+    <link href="https://xuxin0612.github.io/2017/01/16/markdown-expansion/"/>
+    <id>https://xuxin0612.github.io/2017/01/16/markdown-expansion/</id>
+    <published>2017-01-16T15:14:52.000Z</published>
+    <updated>2017-07-28T03:43:45.467Z</updated>
+    
+    <content type="html"><![CDATA[<p>This article mainly tells the rest of common markdown syntax.</p>
+<h2 id="Markdown-Expansion"><a href="#Markdown-Expansion" class="headerlink" title="Markdown Expansion"></a>Markdown Expansion</h2><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><p>To coding in Markdown, you preface the phrase with a <code>TAB</code> or four <code>blanks</code>, you also surround code block with ```  ```, like</p>
+<p>```<br><br>hello world<br>```</p>
+<p>And to write inline code, you can surround words with backticks(``), like `TAB`.</p>
+<h3 id="Separator-Line"><a href="#Separator-Line" class="headerlink" title="Separator Line"></a>Separator Line</h3><p>To add a separator line, you use three or more characters such as <code>*</code> or <code>-</code> or <code>_</code> in a line.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">***</div><div class="line">------</div><div class="line">___</div></pre></td></tr></table></figure></p>
+<h3 id="Strike-Through"><a href="#Strike-Through" class="headerlink" title="Strike Through"></a>Strike Through</h3><p><del>Strike Through</del>. Surround words with tilde(~~ ~~), like<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~~Strike Through~~</div></pre></td></tr></table></figure></p>
+<h3 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h3><p>Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">| Option | Description |</div><div class="line">| ------ | ----------- |</div><div class="line">| data   | path to data files to supply the data that will be passed into templates. |</div><div class="line">| engine | engine to be used for processing templates. Handlebars is the default. |</div><div class="line">| ext    | extension to be used for dest files. |</div></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Named-Anchors"><a href="#Named-Anchors" class="headerlink" title="Named Anchors"></a>Named Anchors</h3><p>Named anchors enable you to jump to the specified anchor point on the same page.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Table of Contents</div><div class="line">  * [Chapter 1](#chapter-1)</div><div class="line">  * [Chapter 2](#chapter-2)</div><div class="line">  * [Chapter 3](#chapter-3)</div></pre></td></tr></table></figure>
+<p>will jump to these sections:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#### Chapter 1 &lt;a id=&quot;chapter-1&quot;&gt;&lt;/a&gt;</div><div class="line">Content for chapter one.</div><div class="line"></div><div class="line">#### Chapter 2 &lt;a id=&quot;chapter-2&quot;&gt;&lt;/a&gt;</div><div class="line">Content for chapter one.</div><div class="line"></div><div class="line">#### Chapter 3 &lt;a id=&quot;chapter-3&quot;&gt;&lt;/a&gt;</div><div class="line">Content for chapter one.</div></pre></td></tr></table></figure>
+<h3 id="Character-Escape"><a href="#Character-Escape" class="headerlink" title="Character Escape"></a>Character Escape</h3><p>The backslash (<code>\</code>) is used to insert characters that have special roles in the Markdown grammar, like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">\</div><div class="line">`</div><div class="line">*</div><div class="line">_</div><div class="line">&#123;&#125;</div><div class="line">[]</div><div class="line">()</div><div class="line">#</div><div class="line">+</div><div class="line">-</div><div class="line">.</div><div class="line">!</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This article mainly tells the rest of common markdown syntax.&lt;/p&gt;
+&lt;h2 id=&quot;Markdown-Expansion&quot;&gt;&lt;a href=&quot;#Markdown-Expansion&quot; class=&quot;header
+    
+    </summary>
+    
+      <category term="Markdown" scheme="https://xuxin0612.github.io/categories/Markdown/"/>
+    
+    
+      <category term="markdown" scheme="https://xuxin0612.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown Note</title>
     <link href="https://xuxin0612.github.io/2017/01/15/markdown-note/"/>
     <id>https://xuxin0612.github.io/2017/01/15/markdown-note/</id>
     <published>2017-01-15T15:14:52.000Z</published>
-    <updated>2017-07-27T06:56:36.090Z</updated>
+    <updated>2017-07-28T03:27:03.638Z</updated>
     
     <content type="html"><![CDATA[<p>Markdown is a better way to write content for the web. So spending several minutes learning it is beneficial for us.</p>
 <h2 id="Markdown-Syntax"><a href="#Markdown-Syntax" class="headerlink" title="Markdown Syntax"></a>Markdown Syntax</h2><h3 id="Italics-and-Bold"><a href="#Italics-and-Bold" class="headerlink" title="Italics and Bold"></a>Italics and Bold</h3><p>To make a phrase italic in Markdown, you can surround words with an underscore ( _ ).<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="emphasis">_Writing in Markdown_</span> is not that hard!</div></pre></td></tr></table></figure></p>
@@ -49,8 +107,8 @@
 <p><strong>Writing in Markdown</strong> is not that hard!<br><a id="more"></a></p>
 <h3 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h3><p>As their name implies, they act like titles or subtitles above sections.<br>There are six types of headers, in decreasing sizes:<br>To make headers in Markdown, you preface the phrase with a hash mark (#). You place the same number of hash marks as the size of the header you want. For example, for a header one, you’d use one hash mark (# Header One), while for a header three, you’d use three (### Header Three).<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="section"># Header one</span></div><div class="line"><span class="section">## Header two</span></div><div class="line"><span class="section">### Header three</span></div><div class="line"><span class="section">#### Header four</span></div><div class="line"><span class="section">##### Header five</span></div><div class="line"><span class="section">###### Header six</span></div></pre></td></tr></table></figure></p>
 <p><img src="https://xuxin0612.github.io/uploads/1501135901.jpg" alt="headers image"></p>
-<h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><p>To create an hyperlink link, you wrap the link text in brackets ( [ ] ), and then you wrap the link in parenthesis ( ( ) )<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Search about [<span class="string">On the way</span>](<span class="link">https://xuxin0612.github.io</span>)</div></pre></td></tr></table></figure></p>
-<p>Search about <a href="https://xuxin0612.github.io">On the way</a></p>
+<h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><p>To create an hyperlink link, you wrap the link text in brackets ( [ ] ), and then you wrap the link in parenthesis ( ( ) )<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Search about [<span class="string">On the way</span>](<span class="link">https://xuxin0612.github.io "welcome to my site"</span>)</div></pre></td></tr></table></figure></p>
+<p>Search about <a href="https://xuxin0612.github.io" title="welcome to my site">On the way</a></p>
 <p>Or<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Search about [<span class="string">On the way</span>][<span class="symbol">site</span>]</div><div class="line"></div><div class="line">[<span class="symbol">site</span>]: <span class="link">https://xuxin0612.github.io</span></div></pre></td></tr></table></figure></p>
 <p>Search about <a href="xuxin0612.github.io">On the way</a></p>
 <h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><p>To create an inline image link, enter an exclamation point ( ! ), wrap the alt text in brackets ( [ ] ), and then wrap the link in parenthesis ( ( ) ).<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![<span class="string">site-author-image</span>](<span class="link">https://xuxin0612.github.io/uploads/59572399266843.png</span>)</div></pre></td></tr></table></figure></p>
