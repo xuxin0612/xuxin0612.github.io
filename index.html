@@ -334,6 +334,154 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://xuxin0612.github.io/2017/09/30/git-maven-tomcat-ci-script/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Scott Hsu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/59572399266843.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="On the way">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/30/git-maven-tomcat-ci-script/" itemprop="url">Git Maven Tomcat deploy.sh(Section 1)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-30T13:30:00+08:00">
+                2017-09-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Shell/" itemprop="url" rel="index">
+                    <span itemprop="name">Shell</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/30/git-maven-tomcat-ci-script/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/09/30/git-maven-tomcat-ci-script/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Recently took over a computer, too lazy to install Jenkins, then wrote a simple deployment scripts, welcome to discuss about it.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line">BRANCH=<span class="string">"dev"</span></div><div class="line">TODAY=$(date +<span class="string">"%Y-%m-%d"</span>)</div><div class="line">PRO_NAME=<span class="string">"mkt-admin"</span></div><div class="line">GIT_HOME=<span class="string">"/home/app/git_repo/mkt-admin"</span></div><div class="line">TOMCAT_NAME=<span class="string">"tomcat-pay-8080"</span></div><div class="line">TOMCAT_HOME=/usr/<span class="built_in">local</span>/<span class="variable">$&#123;TOMCAT_NAME&#125;</span></div><div class="line"><span class="built_in">cd</span> <span class="variable">$&#123;GIT_HOME&#125;</span></div><div class="line">git fetch</div><div class="line">git checkout <span class="variable">$&#123;BRANCH&#125;</span></div><div class="line"><span class="built_in">echo</span> <span class="string">"Start pull code..."</span></div><div class="line">git pull</div><div class="line">mvn clean install -Dmaven.test.skip=<span class="literal">true</span> -e -U</div><div class="line"><span class="built_in">cd</span> <span class="variable">$TOMCAT_HOME</span></div><div class="line"><span class="built_in">echo</span> <span class="string">"Shutdown Tomcat..."</span></div><div class="line">./bin/shutdown.sh</div><div class="line">sleep 20</div><div class="line"><span class="built_in">echo</span> <span class="string">"Testing Tomcat status..."</span></div><div class="line">TOMCAT_PID=$( ps aux | grep <span class="variable">$&#123;_TOMCAT_NAME&#125;</span> | grep -v grep | awk <span class="string">'&#123;print $2&#125;'</span> )</div><div class="line"><span class="built_in">echo</span> <span class="string">"Get Tomcat PID: "</span> <span class="variable">$TOMCAT_PID</span></div><div class="line"><span class="keyword">if</span> [[ <span class="variable">$&#123;TOMCAT_PID&#125;</span> ]]   <span class="comment"># if PID exists</span></div><div class="line"><span class="keyword">then</span></div><div class="line">  <span class="built_in">echo</span> <span class="string">"PID exists, cannot shutdown Tomcat successfully."</span></div><div class="line">  <span class="comment">#echo "Killing..."</span></div><div class="line">  <span class="comment">#kill -9 $&#123;_TOMCAT_PID&#125;</span></div><div class="line">  <span class="comment">#sleep 5</span></div><div class="line">  <span class="comment"># Considering strongly killing processes leading to accidental error, so conservative to opt out and manual processing it.</span></div><div class="line">  <span class="built_in">echo</span> <span class="string">"Exiting..."</span></div><div class="line">  <span class="built_in">exit</span> 1</div><div class="line"><span class="keyword">else</span></div><div class="line">  <span class="built_in">echo</span> <span class="string">"PID is not exists, ready for start."</span></div><div class="line"><span class="keyword">fi</span></div><div class="line">rm -rf webapps/<span class="variable">$&#123;PRO_NAME&#125;</span>*</div><div class="line">rm -rf work/*</div><div class="line">cp <span class="variable">$&#123;GIT_HOME&#125;</span>/target/mkt-admin.war webapps/</div><div class="line">sleep 1</div><div class="line"><span class="built_in">echo</span> <span class="string">"Start Tomcat..."</span></div><div class="line">./bin/startup.sh</div><div class="line">tailf logs/localhost.<span class="variable">$&#123;TODAY&#125;</span>.<span class="built_in">log</span></div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <!--
+    <div>
+      
+    </div>
+    -->
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://xuxin0612.github.io/2017/01/22/logback-manual-Ch1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1448,7 +1596,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1459,7 +1607,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -1470,7 +1618,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

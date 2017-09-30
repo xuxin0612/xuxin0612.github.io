@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Git Maven Tomcat deploy.sh(Section 1)]]></title>
+    <url>%2F2017%2F09%2F30%2Fgit-maven-tomcat-ci-script%2F</url>
+    <content type="text"><![CDATA[Recently took over a computer, too lazy to install Jenkins, then wrote a simple deployment scripts, welcome to discuss about it.123456789101112131415161718192021222324252627282930313233343536373839#!/bin/bashBRANCH="dev"TODAY=$(date +"%Y-%m-%d")PRO_NAME="mkt-admin"GIT_HOME="/home/app/git_repo/mkt-admin"TOMCAT_NAME="tomcat-pay-8080"TOMCAT_HOME=/usr/local/$&#123;TOMCAT_NAME&#125;cd $&#123;GIT_HOME&#125;git fetchgit checkout $&#123;BRANCH&#125;echo "Start pull code..."git pullmvn clean install -Dmaven.test.skip=true -e -Ucd $TOMCAT_HOMEecho "Shutdown Tomcat..."./bin/shutdown.shsleep 20echo "Testing Tomcat status..."TOMCAT_PID=$( ps aux | grep $&#123;_TOMCAT_NAME&#125; | grep -v grep | awk '&#123;print $2&#125;' )echo "Get Tomcat PID: " $TOMCAT_PIDif [[ $&#123;TOMCAT_PID&#125; ]] # if PID existsthen echo "PID exists, cannot shutdown Tomcat successfully." #echo "Killing..." #kill -9 $&#123;_TOMCAT_PID&#125; #sleep 5 # Considering strongly killing processes leading to accidental error, so conservative to opt out and manual processing it. echo "Exiting..." exit 1else echo "PID is not exists, ready for start."firm -rf webapps/$&#123;PRO_NAME&#125;*rm -rf work/*cp $&#123;GIT_HOME&#125;/target/mkt-admin.war webapps/sleep 1echo "Start Tomcat..."./bin/startup.shtailf logs/localhost.$&#123;TODAY&#125;.log]]></content>
+      <categories>
+        <category>Shell</category>
+      </categories>
+      <tags>
+        <tag>Shell</tag>
+        <tag>Ci</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Logback Manual(Section 1)]]></title>
     <url>%2F2017%2F01%2F22%2Flogback-manual-Ch1%2F</url>
     <content type="text"></content>

@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git," />
+  <meta name="keywords" content="Shell,Ci," />
 
 
 
@@ -97,18 +97,18 @@
 
 
 
-<meta name="description" content="At first, let’s look at a common example for using git. Example123456$ echo &quot;# pythonLearning&quot; &amp;gt;&amp;gt; README.md$ git init$ git add README.md$ git commit -m &quot;first commit&quot;$ git remote add origin git@">
-<meta name="keywords" content="git">
+<meta name="description" content="Recently took over a computer, too lazy to install Jenkins, then wrote a simple deployment scripts, welcome to discuss about it.123456789101112131415161718192021222324252627282930313233343536373839#!/">
+<meta name="keywords" content="Shell,Ci">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git Command(Section 1)">
-<meta property="og:url" content="https://xuxin0612.github.io/2017/01/06/git-command/index.html">
+<meta property="og:title" content="Git Maven Tomcat deploy.sh(Section 1)">
+<meta property="og:url" content="https://xuxin0612.github.io/2017/09/30/git-maven-tomcat-ci-script/index.html">
 <meta property="og:site_name" content="On the way">
-<meta property="og:description" content="At first, let’s look at a common example for using git. Example123456$ echo &quot;# pythonLearning&quot; &amp;gt;&amp;gt; README.md$ git init$ git add README.md$ git commit -m &quot;first commit&quot;$ git remote add origin git@">
+<meta property="og:description" content="Recently took over a computer, too lazy to install Jenkins, then wrote a simple deployment scripts, welcome to discuss about it.123456789101112131415161718192021222324252627282930313233343536373839#!/">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-07-24T02:39:07.705Z">
+<meta property="og:updated_time" content="2017-09-30T05:48:54.646Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git Command(Section 1)">
-<meta name="twitter:description" content="At first, let’s look at a common example for using git. Example123456$ echo &quot;# pythonLearning&quot; &amp;gt;&amp;gt; README.md$ git init$ git add README.md$ git commit -m &quot;first commit&quot;$ git remote add origin git@">
+<meta name="twitter:title" content="Git Maven Tomcat deploy.sh(Section 1)">
+<meta name="twitter:description" content="Recently took over a computer, too lazy to install Jenkins, then wrote a simple deployment scripts, welcome to discuss about it.123456789101112131415161718192021222324252627282930313233343536373839#!/">
 
 
 
@@ -136,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="https://xuxin0612.github.io/2017/01/06/git-command/"/>
+  <link rel="canonical" href="https://xuxin0612.github.io/2017/09/30/git-maven-tomcat-ci-script/"/>
 
 
 
 
 
-  <title>Git Command(Section 1) | On the way</title>
+  <title>Git Maven Tomcat deploy.sh(Section 1) | On the way</title>
   
 
 
@@ -334,7 +334,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://xuxin0612.github.io/2017/01/06/git-command/">
+    <link itemprop="mainEntityOfPage" href="https://xuxin0612.github.io/2017/09/30/git-maven-tomcat-ci-script/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Scott Hsu">
@@ -351,7 +351,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git Command(Section 1)</h1>
+          <h1 class="post-title" itemprop="name headline">Git Maven Tomcat deploy.sh(Section 1)</h1>
         
 
         <div class="post-meta">
@@ -363,8 +363,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-06T23:14:52+08:00">
-                2017-01-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-30T13:30:00+08:00">
+                2017-09-30
               </time>
             
 
@@ -386,8 +386,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
+                  <a href="/categories/Shell/" itemprop="url" rel="index">
+                    <span itemprop="name">Shell</span>
                   </a>
                 </span>
 
@@ -405,8 +405,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/01/06/git-command/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2017/01/06/git-command/" itemprop="commentsCount"></span>
+                <a href="/2017/09/30/git-maven-tomcat-ci-script/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/09/30/git-maven-tomcat-ci-script/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -437,22 +437,7 @@
       
 
       
-        <p>At first, let’s look at a common example for using <a href="https://git-scm.com/" target="_blank" rel="external">git</a>.</p>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">"# pythonLearning"</span> &gt;&gt; README.md</div><div class="line">$ git init</div><div class="line">$ git add README.md</div><div class="line">$ git commit -m <span class="string">"first commit"</span></div><div class="line">$ git remote add origin git@github.com:xuxin0612/pythonLearning.git</div><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h3 id="Create-an-empty-Git-repository-or-reinitialize-an-existing-one"><a href="#Create-an-empty-Git-repository-or-reinitialize-an-existing-one" class="headerlink" title="Create an empty Git repository or reinitialize an existing one"></a>Create an empty Git repository or reinitialize an existing one</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git init</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="Add-file-contents-to-the-index"><a href="#Add-file-contents-to-the-index" class="headerlink" title="Add file contents to the index"></a>Add file contents to the index</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add xx.txt</div></pre></td></tr></table></figure>
-<h3 id="Show-the-working-tree-status"><a href="#Show-the-working-tree-status" class="headerlink" title="Show the working tree status"></a>Show the working tree status</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git status</div></pre></td></tr></table></figure>
-<h3 id="Record-changes-to-the-repository"><a href="#Record-changes-to-the-repository" class="headerlink" title="Record changes to the repository"></a>Record changes to the repository</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -m “add xx.txt”</div></pre></td></tr></table></figure>
-<h3 id="Show-changes-between-commits-commit-and-working-tree-etc"><a href="#Show-changes-between-commits-commit-and-working-tree-etc" class="headerlink" title="Show changes between commits, commit and working tree, etc"></a>Show changes between commits, commit and working tree, etc</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">"# some changes"</span> &gt;&gt; xx.txt</div><div class="line">$ git diff xx.txt</div></pre></td></tr></table></figure>
-<h3 id="Show-commit-logs"><a href="#Show-commit-logs" class="headerlink" title="Show commit logs"></a>Show commit logs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">log</span> —-pretty=oneline</div></pre></td></tr></table></figure>
-<h3 id="Reset-current-HEAD-to-the-specified-state"><a href="#Reset-current-HEAD-to-the-specified-state" class="headerlink" title="Reset current HEAD to the specified state"></a>Reset current HEAD to the specified state</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset —-hard HEAD^</div></pre></td></tr></table></figure>
-<p>&nbsp; &nbsp; or<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset —-hard commit_id</div></pre></td></tr></table></figure></p>
-<h3 id="See-and-Manage-the-history-of-referance-logs"><a href="#See-and-Manage-the-history-of-referance-logs" class="headerlink" title="See and Manage the history of referance logs"></a>See and Manage the history of referance logs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reflog</div></pre></td></tr></table></figure>
-<h3 id="Restore-working-tree-files-that-are-modified-or-deleted"><a href="#Restore-working-tree-files-that-are-modified-or-deleted" class="headerlink" title="Restore working tree files that are modified or deleted"></a>Restore working tree files that are modified or deleted</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ rm -rf xx.txt</div><div class="line">$ git checkout -- xx.txt</div></pre></td></tr></table></figure>
-<h3 id="Remove-files-from-the-working-tree-and-from-the-index"><a href="#Remove-files-from-the-working-tree-and-from-the-index" class="headerlink" title="Remove files from the working tree and from the index"></a>Remove files from the working tree and from the index</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git rm xx.txt</div></pre></td></tr></table></figure>
-<h3 id="Associate-a-remote-repository"><a href="#Associate-a-remote-repository" class="headerlink" title="Associate a remote repository"></a>Associate a remote repository</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git remote add origin git@github.com:xuxin0612/pythonLearning.git</div></pre></td></tr></table></figure>
-<h3 id="Add-upstream-push-the-current-branch"><a href="#Add-upstream-push-the-current-branch" class="headerlink" title="Add upstream, push the current branch"></a>Add upstream, push the current branch</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push -u origin master:master</div></pre></td></tr></table></figure>
+        <p>Recently took over a computer, too lazy to install Jenkins, then wrote a simple deployment scripts, welcome to discuss about it.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line">BRANCH=<span class="string">"dev"</span></div><div class="line">TODAY=$(date +<span class="string">"%Y-%m-%d"</span>)</div><div class="line">PRO_NAME=<span class="string">"mkt-admin"</span></div><div class="line">GIT_HOME=<span class="string">"/home/app/git_repo/mkt-admin"</span></div><div class="line">TOMCAT_NAME=<span class="string">"tomcat-pay-8080"</span></div><div class="line">TOMCAT_HOME=/usr/<span class="built_in">local</span>/<span class="variable">$&#123;TOMCAT_NAME&#125;</span></div><div class="line"><span class="built_in">cd</span> <span class="variable">$&#123;GIT_HOME&#125;</span></div><div class="line">git fetch</div><div class="line">git checkout <span class="variable">$&#123;BRANCH&#125;</span></div><div class="line"><span class="built_in">echo</span> <span class="string">"Start pull code..."</span></div><div class="line">git pull</div><div class="line">mvn clean install -Dmaven.test.skip=<span class="literal">true</span> -e -U</div><div class="line"><span class="built_in">cd</span> <span class="variable">$TOMCAT_HOME</span></div><div class="line"><span class="built_in">echo</span> <span class="string">"Shutdown Tomcat..."</span></div><div class="line">./bin/shutdown.sh</div><div class="line">sleep 20</div><div class="line"><span class="built_in">echo</span> <span class="string">"Testing Tomcat status..."</span></div><div class="line">TOMCAT_PID=$( ps aux | grep <span class="variable">$&#123;_TOMCAT_NAME&#125;</span> | grep -v grep | awk <span class="string">'&#123;print $2&#125;'</span> )</div><div class="line"><span class="built_in">echo</span> <span class="string">"Get Tomcat PID: "</span> <span class="variable">$TOMCAT_PID</span></div><div class="line"><span class="keyword">if</span> [[ <span class="variable">$&#123;TOMCAT_PID&#125;</span> ]]   <span class="comment"># if PID exists</span></div><div class="line"><span class="keyword">then</span></div><div class="line">  <span class="built_in">echo</span> <span class="string">"PID exists, cannot shutdown Tomcat successfully."</span></div><div class="line">  <span class="comment">#echo "Killing..."</span></div><div class="line">  <span class="comment">#kill -9 $&#123;_TOMCAT_PID&#125;</span></div><div class="line">  <span class="comment">#sleep 5</span></div><div class="line">  <span class="comment"># Considering strongly killing processes leading to accidental error, so conservative to opt out and manual processing it.</span></div><div class="line">  <span class="built_in">echo</span> <span class="string">"Exiting..."</span></div><div class="line">  <span class="built_in">exit</span> 1</div><div class="line"><span class="keyword">else</span></div><div class="line">  <span class="built_in">echo</span> <span class="string">"PID is not exists, ready for start."</span></div><div class="line"><span class="keyword">fi</span></div><div class="line">rm -rf webapps/<span class="variable">$&#123;PRO_NAME&#125;</span>*</div><div class="line">rm -rf work/*</div><div class="line">cp <span class="variable">$&#123;GIT_HOME&#125;</span>/target/mkt-admin.war webapps/</div><div class="line">sleep 1</div><div class="line"><span class="built_in">echo</span> <span class="string">"Start Tomcat..."</span></div><div class="line">./bin/startup.sh</div><div class="line">tailf logs/localhost.<span class="variable">$&#123;TODAY&#125;</span>.<span class="built_in">log</span></div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -489,7 +474,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
+            <a href="/tags/Shell/" rel="tag"># Shell</a>
+          
+            <a href="/tags/Ci/" rel="tag"># Ci</a>
           
         </div>
       
@@ -502,8 +489,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/01/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/01/22/logback-manual-Ch1/" rel="next" title="Logback Manual(Section 1)">
+                <i class="fa fa-chevron-left"></i> Logback Manual(Section 1)
               </a>
             
           </div>
@@ -511,10 +498,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/07/git-command-2/" rel="prev" title="Git Command(Section 2)">
-                Git Command(Section 2) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -587,17 +570,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/59572399266843.png"
@@ -707,22 +681,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">1.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">2.</span> <span class="nav-text">Reference</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-an-empty-Git-repository-or-reinitialize-an-existing-one"><span class="nav-number">2.1.</span> <span class="nav-text">Create an empty Git repository or reinitialize an existing one</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-file-contents-to-the-index"><span class="nav-number">2.2.</span> <span class="nav-text">Add file contents to the index</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-the-working-tree-status"><span class="nav-number">2.3.</span> <span class="nav-text">Show the working tree status</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Record-changes-to-the-repository"><span class="nav-number">2.4.</span> <span class="nav-text">Record changes to the repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-changes-between-commits-commit-and-working-tree-etc"><span class="nav-number">2.5.</span> <span class="nav-text">Show changes between commits, commit and working tree, etc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-commit-logs"><span class="nav-number">2.6.</span> <span class="nav-text">Show commit logs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reset-current-HEAD-to-the-specified-state"><span class="nav-number">2.7.</span> <span class="nav-text">Reset current HEAD to the specified state</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#See-and-Manage-the-history-of-referance-logs"><span class="nav-number">2.8.</span> <span class="nav-text">See and Manage the history of referance logs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Restore-working-tree-files-that-are-modified-or-deleted"><span class="nav-number">2.9.</span> <span class="nav-text">Restore working tree files that are modified or deleted</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Remove-files-from-the-working-tree-and-from-the-index"><span class="nav-number">2.10.</span> <span class="nav-text">Remove files from the working tree and from the index</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Associate-a-remote-repository"><span class="nav-number">2.11.</span> <span class="nav-text">Associate a remote repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-upstream-push-the-current-branch"><span class="nav-number">2.12.</span> <span class="nav-text">Add upstream, push the current branch</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -884,7 +842,7 @@
 		_hcwp.push({widget:"Bloggerstream", widget_id: 93330, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 93330, xid: "2017/01/06/git-command/"});
+		_hcwp.push({widget:"Stream", widget_id: 93330, xid: "2017/09/30/git-maven-tomcat-ci-script/"});
 		
 
 		(function() {
